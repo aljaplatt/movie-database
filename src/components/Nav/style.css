@@ -1,0 +1,29 @@
+:root {
+  --background-color: #373a36;
+  --color: #2dc653;
+  --secondary-color: #ffffff;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-family: monospace;
+  letter-spacing: 5px;
+  min-height: 220px;
+  color: var(--color);
+  background: var(--background-color);
+}
+
+.intro__text {
+  font-family: monospace;
+  font-size: 1.125rem;
+  margin: 1em 0 2em 4em;
+  letter-spacing: 4px;
+  color: var(--color);
+}
+
+.intro__title {
+  font-size: 3rem;
+  margin-left: 0.5em;
+}
