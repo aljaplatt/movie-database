@@ -4,6 +4,8 @@ import { nanoid } from "nanoid";
 import "./App.css";
 
 import DisplayMovie from "../DisplayMovie";
+import Nav from "../Nav";
+import Form from "../Form";
 
 function App() {
   const [data, setData] = useState(false);
@@ -44,7 +46,11 @@ function App() {
   return data ? (
     <div className="movieList">
       <Nav />
-      <Form getQuery={getQuery} />
+      <Form
+        getQuery={getQuery}
+        onSubmit={handleSubmit}
+        onChange={handleChange}
+      />
       {data.map(({ Title, Poster, Year, imdbID }) => {
         return (
           <DisplayMovie
